@@ -11,8 +11,8 @@ import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <h1>TShirt shop</h1>
+    <div >
+      <h1 className='text'>TShirt shop</h1>
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

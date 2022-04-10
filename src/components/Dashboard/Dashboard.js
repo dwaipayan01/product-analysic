@@ -45,7 +45,7 @@ const Dashboard = () => {
         <div className='display'>
             <div className='char-detail'>
                 <h1 className='color'>Line Chart</h1>
-                <LineChart width={400} height={500} data={data}>
+                <LineChart width={400} height={400} data={data}>
                     <Line dataKey={"investment"}></Line>
                     <XAxis dataKey={"month"}></XAxis>
                     <YAxis ></YAxis>
