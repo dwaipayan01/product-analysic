@@ -1,6 +1,9 @@
 import React from 'react';
+import Product from '../../hooks/Product';
+import ShowDetails from '../ShowDetails/ShowDetails';
 import "./Home.css";
 const Home = () => {
+    const [products, setProducts] = Product();
     return (
         <div >
             <div className='details'>
@@ -15,6 +18,12 @@ const Home = () => {
 
             </div>
             <h2 className='text'>Customer review(3)</h2>
+            <div className='display'>
+                {
+                    products.slice(0, 3).map(product => <ShowDetails product={product} key={product.id}></ShowDetails>)
+                }
+            </div>
+
 
         </div>
     );
