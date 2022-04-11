@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Product from '../../hooks/Product';
 import ShowDetails from '../ShowDetails/ShowDetails';
 import "./Home.css";
@@ -23,6 +24,12 @@ const Home = () => {
                     products.slice(0, 3).map(product => <ShowDetails product={product} key={product.id}></ShowDetails>)
                 }
             </div>
+            <div className='see-button'>
+
+                <Link to="/reviews">See all reviews</Link>
+
+            </div>
+
 
 
         </div>

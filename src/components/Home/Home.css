@@ -25,4 +25,16 @@
     grid-gap: 50px;
     margin-top: 50px;
     margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.see-button a {
+
+    margin-left: 550px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    color: black;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 10px;
 }
